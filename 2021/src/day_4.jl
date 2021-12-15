@@ -1,10 +1,9 @@
 # https://adventofcode.com/2021/day/4
 using AdventOfCode
-evalparse(str::String)=eval(Meta.parse(str))
 input = begin
     inp=readlines("2021/data/day_4.txt")
-    (draws=evalparse(inp[begin]),
-    boards=replace(["[[";inp[begin+2:end].*";";"]]"],";"=>"],[") |>join|>evalparse)
+    (draws=parse(inp[begin]),
+    boards=replace(["[[";inp[begin+2:end].*";";"]]"],";"=>"],[") |>join|>parse)
 end
 
 function mark(draw, board)

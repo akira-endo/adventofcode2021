@@ -1,6 +1,5 @@
 # https://adventofcode.com/2021/day/5
 using AdventOfCode
-Base.parse(str::String)=eval(Meta.parse(str))
 input = parse.("(".*replace.(readlines("2021/data/day_5.txt"), "->"=>")=>(").*")")
 rangestep(x,y,step)=range(x,y,step=step)
 function part_1(input)
