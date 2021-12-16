@@ -1,3 +1,4 @@
 [deps]
 AdventOfCode = "7ef4cfdd-3fec-4d8b-b242-bcc5161d01d5"
 Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
