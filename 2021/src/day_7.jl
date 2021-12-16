@@ -8,6 +8,6 @@ function part_1(input)
     sum(abs∘Base.Fix2(-,med),input)
 end
 function part_2(input)
-    mid=round(Int,mean(input)-sum(sign,input)/2length(input))
-    sum((x->x^2+abs(x))∘Base.Fix2(-,mid),input)÷2
+    μ=mean(input)
+    minimum(sum((x->x^2+abs(x))∘Base.Fix2(-,m),input)÷2 for m in (floor(Int,μ),ceil(Int,µ)))
 end
